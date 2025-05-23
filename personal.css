@@ -71,29 +71,34 @@ body {
     position: relative;
     width: 80%;
     margin: 50px auto;
-    max-height: 650px;
+    height: 550px; /* Increased height */
+    max-height: 600px;
 }
 
 .laptop-section img {
     width: 100%;
+    height: 100%; /* Ensures image stretches to match container height */
+    object-fit: cover;
     border-radius: 20px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .laptop-text {
     position: absolute;
-    top: 15%;
-    left: 10%;
-    right: 10%;
-    bottom: 10%;
+    top: 13%;
+    left: 12%;
+    right: 12%;
+    bottom: 15%;
     overflow-y: auto;
     color: crimson;
     font-size: 1.1rem;
     font-weight: 500;
     line-height: 1.6;
     text-align: center;
-    padding: 0 5px;
+    padding: 5px;
+    background: transparent;
 }
+
 
 .laptop-text::-webkit-scrollbar {
     width: 5px;
@@ -208,21 +213,20 @@ body {
         white-space: normal;
     }
 
-    .laptop-section {
-        width: 95%;
-        margin: 30px auto;
-        max-height: 400px;
-    }
+   .laptop-section {
+    width: 95%;
+    height: 450px;
+    margin: 30px auto;
+}
 
-    .laptop-text {
-        position: absolute;
-        top: 10%;
-        left: 5%;
-        right: 5%;
-        bottom: 5%;
-        font-size: 0.9rem;
-        padding: 0 5px;
-    }
+.laptop-text {
+    top: 12%;
+    left: 8%;
+    right: 8%;
+    bottom: 12%;
+    font-size: 0.9rem;
+    padding: 0 5px;
+}
 
     .project-container {
         padding: 20px 10px;
