@@ -75,6 +75,7 @@ body {
 
 .laptop-section img {
     width: 100%;
+    height: auto;
     border-radius: 20px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
@@ -100,12 +101,12 @@ body {
 }
 
 .project-card {
-    background-color:burlywood;
+    background-color: burlywood;
     padding: 20px;
     border-radius: 15px;
     width: 250px;
     text-align: center;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
 }
 
@@ -122,13 +123,13 @@ body {
     text-decoration: none;
     color: #0077cc;
 }
+
 #projects {
     text-align: center;
     margin-top: 40px;
     color: #333;
     font-size: 28px;
 }
-
 
 .project-card a:hover {
     color: black;
@@ -140,7 +141,7 @@ body {
     margin: 40px auto;
     width: 50%;
     border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
@@ -158,6 +159,7 @@ body {
     color: black;
 }
 
+/* ====== MOBILE STYLES BELOW 600px ====== */
 @media screen and (max-width: 600px) {
     #myh1 {
         font-size: 28px;
@@ -199,15 +201,21 @@ body {
         margin: 30px auto;
     }
 
+    .laptop-section img {
+        width: 100%;
+        height: auto;
+        border-radius: 20px;
+    }
+
     .laptop-text {
-        position: static;
-        color: crimson;
-        font-size: 16px;
-        font-weight: 500;
-        line-height: 1.4;
-        text-align: center;
+        position: static; /* Let it flow below the image */
         margin-top: 15px;
         padding: 0 10px;
+        font-size: 16px;
+        font-weight: 500;
+        color: crimson;
+        line-height: 1.4;
+        text-align: center;
     }
 
     .project-container {
@@ -239,3 +247,4 @@ body {
         font-size: 22px;
     }
 }
+
